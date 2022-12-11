@@ -1,0 +1,246 @@
+@font-face {
+  font-family: 'font1';
+  src: url("font.ttf");
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #3c30a6;
+}
+
+.em {
+  font-family: 'font1', sans-serif;
+  border-radius: 10px;
+  width: calc(80%);
+  height: calc(80%);
+  background: #fff;
+  position: absolute;
+  left: calc(10%);
+  top: calc(15%);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+.grad{
+  position: absolute;
+  width: calc(100% - 70%);
+  height: calc(100% - 60%);
+  left: calc(100% - 30%);
+  top: calc(100% - 97%);
+  background: radial-gradient(#8a00c2 30%,#3c30a6 70%)
+}
+
+.search-box {
+  font-family: 'font1', sans-serif;
+  position: absolute;
+  top: 7%;
+  left: 80.5%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255,0.5);
+  height: 30px;
+  border-radius: 13px;
+  padding: 10px;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255,0.3);
+  font-size: 15px;
+}
+
+
+#search-btn {
+  color: #fff;
+  width: 25px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+#search-txt{
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 30;
+  color: #fff;
+  font-size: 17px;
+  line-height: 30px;
+  width: 200px;
+}
+
+
+#logo{
+  width: 80px;
+  position: absolute;
+  left: calc(100% - 98%);
+  top: calc(100% - 98%);
+}
+
+#name{
+  color: #fff;
+  font-family: 'font1', sans-serif;
+  position: absolute;
+  left: calc(100% - 93%);
+  top: calc(100% - 99.5%);
+}
+
+.wrapper{
+  width: 600px;
+  height: 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0px 40px rgba(0,0,0,0.12);
+}
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+header .icons{
+  display: flex;
+}
+header .icons span{
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+header .icons span:hover{
+  background: #f2f2f2;
+}
+header .current-date{
+  font-size: 30px;
+  font-weight: 500;
+  color: #9B59B6;
+  text-decoration: underline;
+  padding-left: 30%;
+}
+.calendar{
+  padding: 20px;
+}
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days{
+  margin-bottom: 20px;
+}
+.calendar li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive{
+  color: #aaa;
+}
+.days li.active{
+  color: #fff;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before{
+  background: #9B59B6;
+}
+.days li:not(.active):hover::before{
+  background: #f2f2f2;
+}
+
+#eve{
+  color: red;
+  position: absolute;
+  left: 68.5%;
+  top: 18%;
+  font-size: 30px;
+  font-family: 'font1', sans-serif;
+  text-decoration: underline;
+}
+
+#reminder{
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: 60%;
+  top: 73.8%;
+  font-size: 15px;
+  font-family: 'font1', sans-serif;
+  border-radius:13px 0 0 13px;
+  padding: 10px;
+  padding-right: 2px;
+  padding-left: 20px;
+  background: rgba(255, 84, 94, 0.80);
+  font-family: 'font1', sans-serif;
+  cursor: pointer;
+}
+
+#remin{
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: 69%;
+  top: 73.8%;
+  font-size: 15px;
+  font-family: 'font1', sans-serif;
+  border-radius:0 13px 13px 0;
+  padding: 10px;
+  padding-right: 15px;
+  padding-left: 2px;
+  background: rgba(255, 84, 94, 0.80);
+  font-family: 'font1', sans-serif;
+  cursor: pointer;
+}
+
+#eves{
+  list-style: square;
+  color: rgb(44, 179, 14);
+  position: absolute;
+  left: 55%;
+  top: 36%;
+  font-size: 22px;
+  font-family: 'font1', sans-serif;
+}
+
+#cont{
+  border: none;
+  background: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #df52b4;
+  position: absolute;
+  left: 67.5%;
+  top:  85%;
+  cursor: pointer;
+}

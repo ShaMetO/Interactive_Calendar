@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'font1';
+    src: url("font.ttf");
+}
+  
+body{
+    background: #3c30a6;
+}
+
+.grad{
+    position: absolute;
+    width: calc(100% - 70%);
+    height: calc(100% - 60%);
+    left: calc(100% - 30%);
+    top: calc(100% - 97%);
+    background: radial-gradient(#8a00c2 30%,#3c30a6 70%)
+  }
+
+#logo{
+    width: 80px;
+    position: absolute;
+    left: calc(100% - 98%);
+    top: calc(100% - 98%);
+}
+
+#name{
+    color: #fff;
+    font-family: 'font1', sans-serif;
+    position: absolute;
+    font-size: 32px;
+    left: calc(100% - 93%);
+    top: calc(100% - 99.5%);
+}
+
+.insideWrap{
+    font-family: 'font1', sans-serif;
+    border-radius: 10px;
+    width: calc(50%);
+    height: calc(100%);
+    background: rgb(255, 255, 255);
+    position: absolute;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+.outside{
+    font-family: 'font1', sans-serif;
+    border-radius: 10px;
+    width: calc(80%);
+    height: calc(80%);
+    background: #fff;
+    position: absolute;
+    left: calc(10%);
+    top: calc(15%);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+h1{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: red;
+    font-weight: normal;
+    text-decoration: underline;
+    position: absolute;
+    top: 3%;
+    left: 63%;
+}
+
+#lab1{
+    color: rgb(19, 19, 19);
+    font-size: 25px;
+    position: absolute;
+    top: 34%;
+    left: 55%;
+}
+
+#lab2{
+    color: rgb(19, 19, 19);
+    font-size: 25px;
+    position: absolute;
+    top: 54%;
+    left: 55%;
+}
+
+#Rname{
+    text-align: center;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid red;
+    width: 150px;
+    color: black;
+    position: absolute;
+    font-size: 25px;
+    left: 73%;
+    top: 34%;
+}
+
+#Rdate{
+    text-align: center;
+    background: none;
+    outline: none;
+    border: none;
+    width: 150px;
+    color: black;
+    position: absolute;
+    font-size: 20px;
+    left: 72.7%;
+    top: 56%;
+}
+
+#Rmon{
+    text-align: center;
+    background: none;
+    outline: none;
+    border: none;
+    width: 150px;
+    color: black;
+    position: absolute;
+    font-size: 20px;
+    left: 73%;
+    top: 50%;
+}
+
+#Ryr{
+    text-align: center;
+    background: none;
+    outline: none;
+    border: none;
+    width: 150px;
+    color: black;
+    position: absolute;
+    font-size: 20px;
+    left: 72.7%;
+    top: 62%;
+}
+
+#sbBtn{
+    position: absolute;
+    font-size: 20px;
+    left: 69%;
+    top: 78%;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #e0582fb4;
+}
+
+#inWrapHead{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    position: absolute;
+    top: 3%;
+    left: 32.5%;
+    color: #8c2fba;
+    font-weight: normal;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+#rem{
+    line-height: 180%;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    list-style: square;
+    font-size: 20px;
+}

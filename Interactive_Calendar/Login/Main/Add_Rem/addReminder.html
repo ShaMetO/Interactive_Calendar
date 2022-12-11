@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="remCss.css">
+    <script src="remScript.js"></script>
+    <title>
+        Add Reminder
+    </title>
+</head>
+<body>
+    <img id="logo" src="logo.png">
+    <h2 id="name">
+      CATO
+    </h2>
+    <div class="grad">
+    </div>
+    
+    <div class="outside">
+        <div class="insideWrap">
+            <p id="inWrapHead">
+                REMINDERS
+            </p>
+
+            <ul id="rem">
+                <li>
+                    19-23 DECEMBER: Exams
+                </li>
+                <li>
+                    24 DECEMBER: Christmas Eve Party
+                </li>
+                <li>
+                    30 DECEMBER: New Year Eve Party
+                </li>
+            </ul>
+        </div>
+
+        <h1>
+            ADD REMINDER
+        </h1>
+    
+            <label id="lab1">Reminder Me To:</label>
+            <input id="Rname" type="text">
+
+            <label id="lab2">Reminder On:</label>
+
+            <select id="Rdate">
+                <option value="0">Select Date</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+
+            <select id="Rmon">
+                <option value="0">Select Month</option>
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+
+            <select id="Ryr">
+                <option value="0">Select Year</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+            </select>
+
+            <button id="sbBtn" onclick="diplayData()">SUBMIT</button>
+    </div>
+
+</body>
